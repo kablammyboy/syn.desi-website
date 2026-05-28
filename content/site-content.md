@@ -1,23 +1,22 @@
 # Syndesi IT Solutions — Website Content Reference
 
-> Source: existing site at https://syn.desi/ (Home + About pages) plus public business
-> listings. The live site actively blocks automated fetching (returns HTTP 403), so the
-> copy below was reconstructed from search-engine indexes that quote the site verbatim,
-> supplemented by business directories (ZoomInfo, LinkedIn). Items marked **[VERIFY]**
-> could not be confirmed directly from the live site and should be double-checked against
-> the source before publishing.
+> Source: the existing site at https://syn.desi/. The live site blocks automated fetching
+> (HTTP 403), so the copy below was transcribed **verbatim from a full-page screenshot of the
+> homepage** provided by the client (`content/reference/homepage-screenshot.png`),
+> supplemented by public business listings. Contact details are confirmed from the site footer.
 
 ---
 
-## Brand
+## Brand & Assets
 
 - **Company name:** Syndesi IT Solutions
-- **Logo:** Wordmark "Syndesi" in heavy black sans-serif, with a small network/node icon
-  followed by "IT Solutions" in grey. (Official logo attached by client — to be used on the
-  hero section. Store the file in `assets/` once added to the repo.)
-- **Domain / website:** https://syn.desi/
-- **Email domain:** `@syn.desi` (e.g. the site owner is `jthrift@syn.desi`).
-  Public-facing contact address **[VERIFY]** — likely `info@syn.desi` / `contact@syn.desi`.
+- **Logo (light bg):** `assets/logo-black.png` — black "Syndesi" wordmark + network-node icon +
+  grey "IT Solutions". 5000×2161, transparent.
+- **Logo (dark bg):** `assets/logo-white.png` — white version of the same mark. 2000×864,
+  transparent. **Use this one on the hero** (the site uses a dark hero background).
+- **Visual style of current site:** dark theme — near-black background with a subtle
+  teal/green circuit-board / binary-code texture. Light/white body text. Monospace font for
+  the footer. Clean, technical, minimal.
 
 ---
 
@@ -25,102 +24,107 @@
 
 > Your trusted partner in technology **consultation, implementation, and management**.
 
-Syndesi IT Solutions offers technical consultation, implementation, and support services
-aimed at enhancing business growth through efficient technology management.
-
 ---
 
-## Home Page
+## Homepage Copy (verbatim)
 
-**Hero / Headline idea**
-- Company logo (provided) front and center.
-- Tagline: *Your trusted partner in technology consultation, implementation, and management.*
-- Primary CTA: **Get in touch** / **Request support** (links to contact).
+### Section heading
+**WHY PARTNER WITH SYNDESI?**
 
-**Intro copy**
-- Syndesi IT Solutions offers **proactive IT support and technology management services at
-  affordable, consistent monthly rates.**
-- Decades of combined experience in the Information Technology field, with experience and
-  certification across **Apple, Microsoft, Linux, and more.**
-- Tailored solutions for **small to medium-sized businesses** across **Florida, Georgia,
-  and beyond.**
-- Depending on the type of IT support required, work can be handled **remotely** or
-  **on-site** at your physical location.
+### Outsourcing That Drives Organizational Productivity
+> Syndesi IT Solutions provides fast and responsive technical consultation, implementation,
+> and support that allow you to use technology as a tool to drive business growth. Outsourcing
+> your day-to-day management, maintenance, and support of your organization's IT infrastructure
+> to Syndesi ensures the efficiency of your technology and workforce.
 
----
+### Unparalleled Experience in the Industry
+> We have decades of combined experience in the Information Technology field. We've managed any
+> small-business setup you can imagine. From one user to hundreds. We have experience and
+> certification with Apple, Microsoft, Linux, and more.
 
-## Services / What We Offer
+### Geographical Area of Service
+> Syndesi is based in Jacksonville, Florida. We service all of Florida, Georgia, and beyond.
+> Depending on the type of IT support you require, we can handle things remotely or on-site at
+> your physical location.
 
-- **Technology Consultation** — guidance on the right technology decisions for your business.
-- **Implementation** — deployment and setup of systems and infrastructure.
-- **Management & Support** — ongoing proactive management of your technology fleet.
-- **Multi-platform expertise** — Apple, Microsoft, Linux, and more.
-- **Remote management & monitoring** — full-fleet remote management for all managed
-  workstations.
-- **Cybersecurity** — antivirus deployment and central monitoring; remote management and
-  cybersecurity solutions to safeguard corporate networks.
-- **Remote & on-site support** — flexible delivery based on the need.
-
----
-
-## Service Commitments (SLA)
-
-- **Direct contact with your assigned Support Engineer.**
-- **Response within four (4) hours** for all service ticket requests.
-- **Response within one (1) hour** for critical issues — reported by clients or detected by
+### We're Proud of Our Operational Excellence
+- **Responses within four hours** for all service ticket requests.
+- **Responses within one hour** for critical issues reported by our clients, or detected by our
   monitoring software.
-- **Full-fleet remote management**, antivirus deployment / central monitoring for all
-  managed workstations.
+- **Direct contact with your assigned Support Engineer.** No messy phone trees or frustrating
+  ticket creation processes.
+- **Full-fleet remote management**, antivirus deployment / central monitoring for all managed
+  workstations.
+- **Network-wide antivirus / antimalware / ransomware protection** for your entire corporate
+  network systems.
 
 ---
 
-## About Page
+## Services / Offerings (derived from the copy above)
 
-- Syndesi provides organizations with **a trusted partner in technology consultation,
-  implementation, and management.**
-- Based in **Jacksonville, Florida**; services all of **Florida, Georgia, and beyond.**
-- Decades of combined IT experience, serving small-to-medium businesses.
-- Certified/experienced with **Apple, Microsoft, and Linux** ecosystems.
-- Specializes in **remote management and cybersecurity** to safeguard corporate networks.
+- **Technology Consultation** — fast, responsive guidance on technology decisions.
+- **Implementation** — deployment and setup of systems and infrastructure.
+- **Management & Support** — outsourced day-to-day management, maintenance, and support of
+  your IT infrastructure.
+- **Multi-platform expertise** — Apple, Microsoft, Linux, and more.
+- **Remote management & monitoring** — full-fleet remote management of all managed workstations.
+- **Cybersecurity** — antivirus / antimalware / ransomware protection across the network;
+  antivirus deployment and central monitoring.
+- **Remote & on-site support** — flexible delivery depending on the need.
 
 ---
 
-## Contact Information
+## Service Commitments (SLA) — for a "Why Syndesi" feature section
 
-- **Phone:** (904) 661-0006  **[VERIFY]** (from public directory listing)
-- **Address:** 630 May St, Jacksonville, FL 32204, United States  **[VERIFY]**
-  (from public directory listing)
-- **Service area:** Florida, Georgia, and beyond (remote nationwide where applicable)
-- **Email:** `@syn.desi` domain — public contact address **[VERIFY]**
+- Direct contact with your assigned Support Engineer (no phone trees).
+- 4-hour response on all service tickets.
+- 1-hour response on critical issues (client-reported or monitoring-detected).
+- Full-fleet remote management + antivirus deployment / central monitoring.
+- Network-wide antivirus / antimalware / ransomware protection.
+
+---
+
+## Contact (confirmed from site footer)
+
+- **Phone:** (904) 661-0006
+- **Email:** support@syn.desi
 - **Website:** https://syn.desi/
+- **Based in:** Jacksonville, Florida
+- **Service area:** all of Florida, Georgia, and beyond (remote or on-site)
+- **Mailing address:** 630 May St, Jacksonville, FL 32204 **[VERIFY]** — from a public
+  directory; not shown on the site footer.
+
+Footer text reads: `SYNDESI IT SOLUTIONS - (904) 661-0006 - SUPPORT@SYN.DESI`, with a
+**"BACK TO TOP"** link above it.
 
 ### People (from public listings — [VERIFY] before publishing)
 - Justin Power — Information Technology Consultant
-- Taylor Carswell — Syndesi IT Solutions
-- J. Thrift — (`jthrift@syn.desi`, site owner / client contact)
+- Taylor Carswell
+- J. Thrift (`jthrift@syn.desi`, client contact for this project)
 
 ---
 
-## Suggested Site Structure (for the new build with 21st.dev components)
+## Suggested Site Structure (new build with 21st.dev components)
 
-1. **Navbar** — logo + links: Home, Services, About, Contact.
-2. **Hero** — logo, tagline, primary CTA.
-3. **Services grid** — cards for the offerings above.
-4. **Why Syndesi / SLA** — the four service commitments as feature highlights.
-5. **Platforms** — Apple / Microsoft / Linux logos + "and more."
-6. **About** — company story, experience, service area.
+1. **Navbar** — white logo + links (Home, Services, About, Contact). Current site uses a
+   hamburger menu.
+2. **Hero** — dark background with subtle circuit/binary texture, white logo, tagline,
+   primary CTA ("Get in touch" → contact / `mailto:support@syn.desi`).
+3. **Why Partner With Syndesi** — the three blocks (Productivity, Experience, Service Area).
+4. **Operational Excellence** — the five SLA/commitment bullets as feature cards.
+5. **Services grid** — cards for the offerings above.
+6. **Platforms** — Apple / Microsoft / Linux + "and more."
 7. **CTA band** — "Ready to get started? Contact us."
-8. **Contact** — phone, email, address, service area, contact form.
-9. **Footer** — logo, nav, contact, copyright.
+8. **Contact** — phone, email, service area, contact form.
+9. **Footer** — logo, nav, phone + email, "Back to top," copyright.
 
 ---
 
 ## Open Questions for the Client
 
-1. Confirm the **public contact email** (info@ / contact@ / support@ syn.desi).
-2. Confirm the **phone number** and **mailing address** (directory data may be stale).
-3. Any **testimonials / client logos** to feature?
-4. **Pricing** — site says "affordable, consistent monthly rates" but lists no figures.
-   Show tiers, or "request a quote"?
-5. Preferred **social media** links (LinkedIn, etc.) for the footer?
-6. Provide the **official logo file** to commit into `assets/`.
+1. **Mailing address** — confirm 630 May St (or omit a physical address, as the live site does).
+2. **Pricing** — copy implies "affordable, consistent monthly rates" but no figures shown.
+   Show tiers, or keep it "request a quote"?
+3. **Testimonials / client logos** to feature?
+4. **Social media** links for the footer (LinkedIn, etc.)?
+5. **Team page** — include named staff, or keep it company-only?
