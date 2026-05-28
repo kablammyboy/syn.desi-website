@@ -28,9 +28,10 @@ jobs:
 
       - run: npm ci
 
-      # If deploying to a PROJECT page (username.github.io/syn.desi-website),
-      # uncomment the next line. For a custom domain (syn.desi) leave it out.
-      # - run: echo "NEXT_PUBLIC_BASE_PATH=/syn.desi-website" >> "$GITHUB_ENV"
+      # Project page (kablammyboy.github.io/syn.desi-website) needs a base path
+      # so assets resolve under the subpath. Remove this step if you later move
+      # to a custom domain (syn.desi).
+      - run: echo "NEXT_PUBLIC_BASE_PATH=/syn.desi-website" >> "$GITHUB_ENV"
 
       - run: npm run build
 

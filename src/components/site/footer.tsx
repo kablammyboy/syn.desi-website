@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowUp } from "lucide-react";
+import { asset } from "@/lib/utils";
 import { company, nav } from "@/lib/content";
 
 export function Footer() {
@@ -12,7 +13,7 @@ export function Footer() {
         <div className="flex flex-col items-start justify-between gap-10 md:flex-row">
           <div className="max-w-sm">
             <Image
-              src="/brand/logo-white.png"
+              src={asset("/brand/logo-white.png")}
               alt={company.name}
               width={2000}
               height={864}

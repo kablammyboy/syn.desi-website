@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { asset, cn } from "@/lib/utils";
 import { company, nav } from "@/lib/content";
 
 export function Navbar() {
@@ -30,7 +30,7 @@ export function Navbar() {
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-8">
         <Link href="#top" className="flex items-center" aria-label={company.name}>
           <Image
-            src="/brand/logo-white.png"
+            src={asset("/brand/logo-white.png")}
             alt={company.name}
             width={2000}
             height={864}

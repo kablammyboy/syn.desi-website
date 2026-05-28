@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
 import { ArrowRight, Phone } from "lucide-react";
+import { asset } from "@/lib/utils";
 import { company } from "@/lib/content";
 
 export function Hero() {
@@ -25,7 +26,7 @@ export function Hero() {
             className="mb-10 flex justify-center"
           >
             <Image
-              src="/brand/logo-white.png"
+              src={asset("/brand/logo-white.png")}
               alt={company.name}
               width={2000}
               height={864}
