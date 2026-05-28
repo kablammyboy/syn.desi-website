@@ -6,18 +6,28 @@ import { motion } from "motion/react";
 import { ArrowRight, Phone } from "lucide-react";
 import { asset } from "@/lib/utils";
 import { company } from "@/lib/content";
+import { CodeRain } from "./code-rain";
 
 export function Hero() {
   return (
     <section
       id="top"
-      className="relative flex min-h-screen items-center overflow-hidden bg-circuit"
+      className="relative flex min-h-screen items-center overflow-hidden bg-[#04060a]"
     >
+      {/* Slow glowing code rain */}
+      <CodeRain className="pointer-events-none absolute inset-0 h-full w-full" />
+
+      {/* Center vignette keeps the logo crisp; bottom fade blends into the page */}
       <div
-        className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background"
+        className="pointer-events-none absolute inset-0 [background:radial-gradient(ellipse_60%_50%_at_center,rgba(4,6,10,0.92)_0%,rgba(4,6,10,0.55)_45%,transparent_80%)]"
         aria-hidden
       />
-      <div className="mx-auto w-full max-w-6xl px-5 py-28 sm:px-8">
+      <div
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-background"
+        aria-hidden
+      />
+
+      <div className="relative z-10 mx-auto w-full max-w-6xl px-5 py-28 sm:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
