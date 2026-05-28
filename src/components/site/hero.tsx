@@ -12,7 +12,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative flex min-h-screen items-center overflow-hidden bg-[#04060a]"
+      className="relative flex min-h-screen items-center overflow-hidden"
     >
       {/* Slow glowing code rain */}
       <CodeRain className="pointer-events-none absolute inset-0 h-full w-full" />

@@ -5,7 +5,7 @@ import { company } from "@/lib/content";
 
 export function Contact() {
   return (
-    <section id="contact" className="relative border-t border-border bg-circuit py-24 sm:py-32">
+    <section id="contact" className="relative border-t border-border py-24 sm:py-32">
       <div className="mx-auto max-w-4xl px-5 text-center sm:px-8">
         <Reveal>
           <p className="mb-3 font-mono text-xs uppercase tracking-widest text-accent">

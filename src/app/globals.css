@@ -7,7 +7,7 @@
 */
 
 :root {
-  --background: #070b11;
+  --background: #000000;
   --surface: #0d141d;
   --surface-2: #121b26;
   --foreground: #e8edf2;
@@ -39,26 +39,14 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Whole-site backdrop: black with a very faint white grid */
 body {
-  background: var(--background);
+  background-color: var(--background);
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 44px 44px;
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
-}
-
-/* Subtle circuit/grid texture for dark sections */
-.bg-circuit {
-  background-image:
-    radial-gradient(circle at 20% 20%, rgba(77, 184, 245, 0.08), transparent 40%),
-    radial-gradient(circle at 80% 0%, rgba(42, 159, 230, 0.06), transparent 35%),
-    linear-gradient(rgba(77, 184, 245, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(77, 184, 245, 0.05) 1px, transparent 1px);
-  background-size: 100% 100%, 100% 100%, 44px 44px, 44px 44px;
-}
-
-.bg-grid {
-  background-image:
-    linear-gradient(rgba(77, 184, 245, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(77, 184, 245, 0.04) 1px, transparent 1px);
-  background-size: 44px 44px;
 }

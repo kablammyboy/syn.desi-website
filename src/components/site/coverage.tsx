@@ -4,7 +4,7 @@ import { company, platforms } from "@/lib/content";
 
 export function Coverage() {
   return (
-    <section id="coverage" className="border-t border-border bg-grid py-24 sm:py-32">
+    <section id="coverage" className="border-t border-border py-24 sm:py-32">
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-2">
         <Reveal>
           <p className="mb-3 font-mono text-xs uppercase tracking-widest text-accent">

@@ -7,7 +7,7 @@ const icons = [Clock, Zap, UserCheck, MonitorSmartphone, ShieldCheck];
 
 export function Excellence() {
   return (
-    <section className="relative border-t border-border bg-grid py-24 sm:py-32">
+    <section className="relative border-t border-border py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <SectionHeading
           eyebrow="Operational excellence"
