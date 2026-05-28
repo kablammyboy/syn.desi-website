@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+/*
+  Syndesi IT Solutions — brand theme
+  Dark, technical, minimal. Near-black background with teal accents,
+  echoing the circuit/binary texture of the current site.
+*/
+
+:root {
+  --background: #070b11;
+  --surface: #0d141d;
+  --surface-2: #121b26;
+  --foreground: #e8edf2;
+  --muted: #9aa7b4;
+  --border: #1e2a38;
+  --accent: #2dd4bf; /* teal */
+  --accent-strong: #14b8a6;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Subtle circuit/grid texture for dark sections */
+.bg-circuit {
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(45, 212, 191, 0.08), transparent 40%),
+    radial-gradient(circle at 80% 0%, rgba(20, 184, 166, 0.06), transparent 35%),
+    linear-gradient(rgba(45, 212, 191, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(45, 212, 191, 0.05) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 44px 44px, 44px 44px;
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(45, 212, 191, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(45, 212, 191, 0.04) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
