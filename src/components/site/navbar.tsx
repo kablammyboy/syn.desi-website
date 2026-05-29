@@ -53,7 +53,7 @@ export function Navbar() {
             href="#contact"
             className="rounded-full bg-accent px-4 py-2 text-sm font-medium text-background transition-colors hover:bg-accent-strong"
           >
-            Get in touch
+            Contact us
           </Link>
         </div>
 
@@ -86,7 +86,7 @@ export function Navbar() {
               onClick={() => setOpen(false)}
               className="mt-2 rounded-full bg-accent px-4 py-2.5 text-center text-sm font-medium text-background"
             >
-              Get in touch
+              Contact us
             </Link>
           </div>
         </div>

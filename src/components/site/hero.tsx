@@ -64,7 +64,7 @@ export function Hero() {
               href="#contact"
               className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-accent px-6 py-3 font-medium text-background transition-colors hover:bg-accent-strong sm:w-auto"
             >
-              Get in touch
+              Contact us
               <ArrowRight className="size-4" />
             </Link>
             <Link
