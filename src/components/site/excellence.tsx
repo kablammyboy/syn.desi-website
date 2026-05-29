@@ -1,6 +1,6 @@
 import { Clock, Zap, UserCheck, MonitorSmartphone, ShieldCheck } from "lucide-react";
-import { Reveal } from "./reveal";
 import { SectionHeading } from "./section-heading";
+import { FeatureCard } from "./feature-card";
 import { excellence } from "@/lib/content";
 
 const icons = [Clock, Zap, UserCheck, MonitorSmartphone, ShieldCheck];
@@ -16,24 +16,15 @@ export function Excellence() {
         />
 
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {excellence.map((item, i) => {
-            const Icon = icons[i];
-            return (
-              <Reveal key={item.title} delay={(i % 3) * 0.08}>
-                <article className="flex h-full gap-4 rounded-2xl border border-border bg-surface/70 p-6 backdrop-blur-sm">
-                  <span className="mt-0.5 inline-flex size-10 shrink-0 items-center justify-center rounded-lg bg-accent/10 text-accent">
-                    <Icon className="size-5" />
-                  </span>
-                  <div>
-                    <h3 className="font-semibold">{item.title}</h3>
-                    <p className="mt-2 text-sm leading-relaxed text-muted">
-                      {item.body}
-                    </p>
-                  </div>
-                </article>
-              </Reveal>
-            );
-          })}
+          {excellence.map((item, i) => (
+            <FeatureCard
+              key={item.title}
+              icon={icons[i]}
+              title={item.title}
+              body={item.body}
+              delay={(i % 3) * 0.08}
+            />
+          ))}
         </div>
       </div>
     </section>

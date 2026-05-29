@@ -1,6 +1,6 @@
 import { Gauge, Award, MapPin } from "lucide-react";
-import { Reveal } from "./reveal";
 import { SectionHeading } from "./section-heading";
+import { FeatureCard } from "./feature-card";
 import { why } from "@/lib/content";
 
 const icons = [Gauge, Award, MapPin];
@@ -16,22 +16,15 @@ export function Why() {
         />
 
         <div className="mt-16 grid gap-6 lg:grid-cols-3">
-          {why.map((item, i) => {
-            const Icon = icons[i];
-            return (
-              <Reveal key={item.title} delay={i * 0.1}>
-                <article className="h-full rounded-2xl border border-border bg-surface p-7 transition-colors hover:border-accent/60">
-                  <span className="mb-5 inline-flex size-11 items-center justify-center rounded-xl bg-accent/10 text-accent">
-                    <Icon className="size-5" />
-                  </span>
-                  <h3 className="text-lg font-semibold">{item.title}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-muted">
-                    {item.body}
-                  </p>
-                </article>
-              </Reveal>
-            );
-          })}
+          {why.map((item, i) => (
+            <FeatureCard
+              key={item.title}
+              icon={icons[i]}
+              title={item.title}
+              body={item.body}
+              delay={i * 0.1}
+            />
+          ))}
         </div>
       </div>
     </section>

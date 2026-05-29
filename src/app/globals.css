@@ -50,3 +50,27 @@ body {
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+
+/*
+  Feathered card: tall, top-lit panel with a hairline border whose edges
+  feather away into the background. Content sits in the opaque (top) zone;
+  the empty lower area dissolves into the grid.
+*/
+.card-feathered {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 21rem;
+  padding: 2rem 1.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 1.1rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.045), transparent 80%);
+  -webkit-mask-image: radial-gradient(120% 108% at 50% 6%, #000 46%, transparent 100%);
+  mask-image: radial-gradient(120% 108% at 50% 6%, #000 46%, transparent 100%);
+  transition: border-color 0.25s ease, background 0.25s ease;
+}
+
+.card-feathered:hover {
+  border-color: rgba(77, 184, 245, 0.55);
+  background: linear-gradient(180deg, rgba(77, 184, 245, 0.08), transparent 80%);
+}
