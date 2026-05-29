@@ -9,7 +9,7 @@ export function Contact() {
       <div className="mx-auto max-w-4xl px-5 text-center sm:px-8">
         <Reveal>
           <p className="mb-3 font-mono text-xs uppercase tracking-widest text-accent">
-            Get in touch
+            Contact us
           </p>
           <h2 className="text-balance text-3xl font-bold tracking-tight sm:text-4xl">
             Ready to make technology work for you?
